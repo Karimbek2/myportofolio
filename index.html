@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karimbek — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="http://karimbekportofolio.vercel.app">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    
+    <header class="nav">
+      <div class="container nav__wrapper">
+        <a href="#top" class="nav__logo">KARIMBEK<span class="dot">.</span></a>
+
+        <nav class="nav__lists" id="navLinks">
+          <a href="#about"><span class="num">01</span> Men haqimda</a>
+          <a href="#family"><span class="num">02</span> Oilam</a>
+          <a href="#group"><span class="num">03</span> Guruhim</a>
+          <a href="#projects"><span class="num">04</span> Loyihalar</a>
+          <a href="#contact"><span class="num">05</span> Aloqa</a>
+        </nav>
+
+        <button class="burger" id="burgerBtn" aria-label="menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <!-- <div class="hero__bg-text">DEVELOPER</div> -->
+        <div class="container hero__wrapper">
+          <div class="hero__copy">
+            <p class="hero__eyebrow">// PDP Junior &middot; Tashkent</p>
+            <h1 class="hero__title">
+              Salom, men<br />
+              <span class="hero__title-big">KARIMBEK</span>
+            </h1>
+            <p class="hero__desc">
+              13 yoshli kelajak frontend dasturchisi. Sayt yasashni, futbolni va
+              g'oyalarni hayotga tatbiq etishni sevaman.
+            </p>
+            <div class="hero__cta">
+              <a href="#about" class="btn btn--primary">
+                Meni tanish <span class="arrow">→</span>
+              </a>
+              <a href="#projects" class="btn btn--ghost">Loyihalarim</a>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero__frame">
+              <img class="ph" src="photo_2026-09-30_15-13-12.jpg" alt="" />
+            </div>
+            <div class="hero__badge hero__badge--1">⚽ Futbol fan</div>
+            <div class="hero__badge hero__badge--2">3+ oy &middot; PDP</div>
+            <div class="hero__shape hero__shape--1"></div>
+            <div class="hero__shape hero__shape--2"></div>
+          </div>
+        </div>
+
+        <div class="marquee">
+          <div class="marquee__track">
+            <span
+              >FRONTEND &middot; HTML &middot; CSS &middot; JAVASCRIPT &middot;
+              KELAJAK DASTURCHI &middot;
+            </span>
+            <span
+              >FRONTEND &middot; HTML &middot; CSS &middot; JAVASCRIPT &middot;
+              KELAJAK DASTURCHI &middot;
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="section-title">
+            <span class="section-num">01</span> Men haqimda
+          </h2>
+
+          <div class="about__grid">
+            <div class="about__photo">
+              <img src="photo_2026-09-30_15-13-12.jpg" alt="Karimbek" />
+              <div class="about__photo-tag">30.10.2013 yil tug'ilgan</div>
+            </div>
+
+            <div class="about__facts">
+              <p class="about__lead">
+                Salom! Ismim <strong>Karimbek</strong>, 226-maktab 7-A sinf
+                o'quvchisiman. PDP Juniorda <strong>3 oydan beri</strong>
+                dasturlashni o'rganaman va kelajakda professional dasturchi
+                bo'lishni orzu qilaman.
+              </p>
+
+              <ul class="fact-list">
+                <li>
+                  <span class="fact-icon"><img class="tugul" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf2070alk7YHWYEOifJZMdjf3g5uF41GbpJzTP6O_gSQ&s=10" alt=""></span>
+                  <div>
+                    <b>Tug'ilgan sana</b>
+                    <p>30.10.2013</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="fact-icon"><img class="tugul" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABX1BMVEX/////yyn/4IG9vb33jx7zcCF5Vkn19PXxWSvg4OC6urrpzXfw8PD/7LL/333puii5u8D/8MP013z7yJr3igP/yh/y2pP4li//4ofa2toAAAD/33p1UUP9xmb8sQShjYb/44//9dr/24D/xwD/+uz/56Pyylf++Pb/667KTinxXi/yZwD6qDtvTEn/89H8zDnkukvxoiT38eNgYGBDQ0P+yin05r7xURzwThTsuS3ywSj/77z/+ej/0SX+8Oz70sj1fBn2lmT5vJ/6zLX4q4b1iU70dyrwsDXzaB/83s/0fz7yYQD/2W3otg35qV7Vq0v9257PZU3ajHr4r537zcPzbkrJSB7zdVb1im72nof4u67HQA3zdlL2mYL4sqP5xbn3l0X2m230hzPznDP/01L3pXuenp7zjSwaGhp6enr8zo392736t3m+l0qpiFuZeFuHZ1bHoVGwi1HcsUvo4MxIMdvuAAAJ50lEQVR4nO3bjXfTthoH4DorBXob9xZmcMlgKUlIRmndsSX9cJJSoKWBQNkKtHB3dwdkY7vbKBT+/3Nt+UuyJdtSPiz56nfOzmGpneipFL/Wm3RqSkZGRkZGRkZGRkZGRkZGRkbm/zFPrz7NegjjzdNr167lm3jVEl6NO6BXn9RQxhRb+O0PPx4+63ajlG7v8PlGLoTfvFjf2Lj5/Oj45eGrZ9sgz169PP7p5sb6uZv5EH5zDmR93ZK6sf4NHsuXEBcp5D5SKIX8RwqlkP9IoRTyHymUQv4jhVLIf6Rw41wuhC/+tY7TrW+sH/3czXqEwwb0S+vbL39yu0/roB8FGlJHh9uiz5+doCPc3X51+O/j46Oj4+OXP/9nW/i585LY8xY+Uih+pFD8SKH4kULh0/vlzp07v/SyHsbY0t15dMbOo53c3KOh6Z1ZPuNkeS+X03jX8wHj3ayHM/LUd2CgRXyd9YhGnN4eCrSID3P1ZrwX9gHjvayHNbrcxwEt4v2sBzaidHfxQIu4m4uV2iPwnOSgbNwlTaA7jcKXjZ14oPBloxspEhjinsBvRmyRwBiFLRuEIoEhilk26sQigSHuCtjuji8SEaJ4ZSOhSGCMgpWN1wTg/pk31n94okhlI7qT8HJrfn7+LWkWxdltEIvE3oN5Ow/2SEZBygapSOy/25x3svmGtFJFKBvEIrH/dj7IWxKR/7LRI15DnRW6tbXlrFTSYcuclw1Skdh/46zQpqIoTXelkohclw1ikXjnTKDixJnGd+KVDeJOYv8WAvSIt0hEXncbSUWiqQRpilg2iEXCeQs6E6g5sYhbopWNpCKx5fBu9PsFtd83Kpq7UoUpG8FnEuH4K1RT+jXTLIKYRd3QmrFlg7PdBnEnsecXCa3fcHkusmxoTtkgvhn5KRt1YpG47K1QzaghPhBVE6RsdB/G7SQc4MAxNby40+iVDdIs8rHbIBcJaIWCCWwUF9rglOqS6RhrSvybkYuykbCT2Gr6M9hYhS6PbcdY1rgvG6SOL1QklKYzYVX0zFX7UbPglY3LnL4Zf00sEtYUlgHQmcDF3xa9c5cAfKB5K5XLWew9wo8K2klYa9QMZnD2ypUrs97ZYBZrmr/bIJSNR1kWRvwUojsJMIWNJeeE7yzhd/7ppjuJ8buN5V8z0tnB/tbDOwnbYbonoMJ2A1xsknYbe9ng7NSx40F3ElrJnsK2ewYqnFqwJzF5t5FdVcQIkZ0EENZshXdGSGhfbEzDJZLLRoZ1P/Ibh4uEK7QQjQXvhJCwai/Tkobsi6O7jQxXabRrEd3rGo3gOuMIf//ezhfg/+35LXhCd6V+G3rOTCtiqFrsbUaAyqAYFroBddFEhH7ZQKYx02qBlItQuwkWehcaWPib/f+mfzElNqkyLRZTyF1buN3krlKaOcS8GbPf7N9fto3Ly5h2kxP7fbjqHf3H916C9+F1ROiXDWBcznoG7XTv7uzuvr6HnUD3WuoX/HDAtbSPCt2yMf/g3cOHu/f5aWVUCUBF0+1lSjhrFaqHkZX6eIFwVjapYleoLewjb0Q0RffWOxywUh+3JktISJUAVJRKEb6pQQJuaVSMEBB5E+JWqDOJhSJ8rYFSB/boInVXKmfCKRLQmo8iYZ2CTYeOm0Jn8nG/lQxDFjp9qCjR6U6Rz6sQ3rxZhTxSt40RWqjtIigjA+IUiiQEVd9uJgZDri6Ah8xwLRRW6HbbGsWFpbaVVdPpCeOvo0IKFaWGNL3dtn7cDAonBIUfiVkzYoGiCRXN0FFf/AQKKAQfIJY93nVDSwIKKLQ/BK5oxmBgVJJ5kxL2LqZOGqHDTH3gf1O+9BA7rItfps50amH63Er74hfZgdOpc3kcwrQvzkqkAWYrZCRSATMWMhHpgFkLGYiUwLDQKgvhRACRI8LH0AipibTAkFArL4VTDBOTj6ESUhKpgahQK2GeMzT8FMfQCamI9EBUWMH1R6sVJfGYdmUIIQWRATgiYXUoYWoiC5APYUoiE5ATYSoiG5AXYQoiI5AbYSKRFciPMIHIDORIGEtkB/IkjCEOAeRKSCT+OQSQL+H0l39ihU+GAHImnH6CFf6Vozn8CyusP5m+zJy31ELcp/QhIetgpp+QvqFSb/2DOfDQtBrmyZdQYfIx2gXGobRivoEzIqFiVKPPHe7iJx7DLiQDRybUtOvhRD6G0ZSEY7gWYpowSjQJx2isQ4kVXmAORjBkNNahxAkXSgUkqh/8o8HD+hiEKstACoVS3HepUGGpXPMDPa0ePFrzjx+rUIUGUg4wKjQQiJheqMJfZKr6T6FXcSeMU6gihcXHqPCnb0vByCnmECkrpoo9X5+AsNSGX7FdwrkDOIVQr+N+VEK/FuMtmrHOIVI5q3hhkQ9hx8vohQ0OhJ3OjYO/35+cnLw/PVhLoRRM2GmuvV+xMmPH/sfJgZFgFErYMT5+cHBBVmZON2ONIgk7BxGfY/yb8K1bwYQd4wTnA8YPa+RpFEbY+UTgOcaPRKIows4BaQJd4imJOAnhWSgL3j3NKvzo2SRhEjCGGAhvw69Y94XIQJiEc8MLO5+SgGQiQXibL+FmMtAiHmCJYghPUgCtbIoq7HxMM4VW3uMmUQThZjqftU4/cSBs0Qs7pymncGbmA2YSx38tRZ/YewbVRF7Oe16c0Ejrw09isANegl/S282rZeyvmkp4CSKu+j9R4derxQhTvwvtYN6JwRyWoYHc1gMJNBCTqYuhlvxWVgn6QUnV3Vj/9Jc0RvghPRB3OYU6UaVC8JLw+LxH9WAgVEKaYIQGxRRaNTFGSJfJCRPv15BEb2y4F3ZOaYAzJ5GtIv/ClPczXjIR4rvmKbv6dBeamZXIH6FOpKvv/xFPQ4UubA3/4XJMV79DN4UrkYspdC3V/Zds6AGmVPMHUoOv9amF6JF+GUI2xjFdfYp6D4RrRGGarn6bpR7q6I9ou/qjE46rq6+WkR95NzWpuxgjnMMxdfUFEzLceUuhFEqhFEqhFKYRIn2Qli9M2YkaoXBMvTYplEIpzIPwK5qIJ9SaX31Nk5W1yFdsx97VL9ThZ/D2X2oReTlSz1sbtM7T5XP4a9IT6OrXbkef1wr0enVSV1+7QOmz81TDC9Guvk9BPkGBRk7T1S+U/cCdnuDRAqGrrw0YgOfPX9KwwoKqBi8JtdVKuv+oztSJKkDtusSHUWHlM5PwvIEXkrqJ+PFNoiOs9dmA6CTy3PPWLjEKWxVRhEVG4ecJCFXG6PBfT1TYhfCfXzD+uknCs3Nzc2dbl5hzA05rkS2fB/CzsA6lBSxh4OIsyD9HlFnGjPDFF0MzOPtF3jKLzuJcDoVzUih6pFD8SKH4kULxExLm/57Guy/NUUL3pc7eIk+J7C1kZGRkZNjzPy/aT0MtMfpxAAAAAElFTkSuQmCC" alt=""></span>
+                  <div>
+                    <b>Maktab</b>
+                    <p>226-maktab, 7-A sinf</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="fact-icon"><img class="tugul" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtbdPf0z5ski8J7baN1dnG8MWY-R4d6U2OYFtMsTyzhA&s=10" alt=""></span>
+                  <div>
+                    <b>Hozir o'rganyapman</b>
+                    <p>Sayt yasash — HTML, CSS, JS</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="fact-icon"><img class="tugul" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZysDrSALnCXQHhjjBLGzvEFWYxJ_U4F7sCcQ_oKl1dQ&s=10" alt=""></span>
+                  <div>
+                    <b>Sevimli mashg'ulot</b>
+                    <p>Futbol</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="fact-icon"><img class="tugul" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxcnnZLZVgaU4p7sp2Dya-iuyUlja0-I6ypkn7TH3JgA&s=10" alt=""></span>
+                  <div>
+                    <b>Orzu</b>
+                    <p>Kelajakda yaxshi dasturchi bo'lish</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+<section class="sec4"> 
+  <div class="loyiha-list"> 
+    <div data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-bottom" class="loyiha"> 
+      <div class="loyiha-left"> 
+        <p class="fa-solid fa-code"></p> 
+        <h1 class="oilam_new">MENING OILAM</h1>
+        <h1>Begzod</h1>
+                <span class="fam-role">Dadam &middot; 39 yosh</span>
+                <h1>Arxitektor</h1>
+        <a class="loyiha-btn" href="https://superpotfolio.netlify.app/" target="_blank" rel="noopener">Saytni ko'rish</a> 
+      </div> 
+      <a class="loyiha-rasm" href="https://superpotfolio.netlify.app/" target="_blank" rel="noopener"> 
+        <img class="oila" src="photo_2026-08-22_09-17-19.jpg" alt="" loading="lazy"> 
+      </a> 
+    </div> 
+    
+    <div data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-bottom" class="loyiha"> 
+      <div class="loyiha-left"> 
+        <i class="fa-solid fa-code"></i> 
+         <h1>Nargiza</h1>
+                <span class="fam-role">Oyim &middot; 34 yosh</span>
+                <h1>Uybekasi</h1>
+        <a class="loyiha-btn" href="https://portfolioningbirqismi.netlify.app/" target="_blank" rel="noopener">Saytni ko'rish</a> 
+      </div> 
+      <a class="loyiha-rasm" href="https://portfolioningbirqismi.netlify.app/" target="_blank" rel="noopener"> 
+        <img class="oila" src="photo_2026-08-22_09-28-51.jpg" alt="" loading="lazy"> 
+      </a> 
+    </div> 
+    
+    <div data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-bottom" class="loyiha"> 
+      <div class="loyiha-left"> 
+        <i class="fa-solid fa-code"></i> 
+       <h1>Muhammad sodiq</h1>
+                <span class="fam-role">Ukam&middot; 3 yosh</span>
+                <h1>Boqchaga boradi</h1>
+        <a class="loyiha-btn" href="https://portifolioningbirqismi3.netlify.app/" target="_blank" rel="noopener">Saytni ko'rish</a> 
+      </div> 
+      <a class="loyiha-rasm" href="https://portifolioningbirqismi3.netlify.app/" target="_blank" rel="noopener"> 
+        <img class="oila" src="photo_2026-08-22_09-19-31.jpg" alt="" loading="lazy"> 
+      </a> 
+    </div> 
+    
+    <div data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-bottom" class="loyiha"> 
+      <div class="loyiha-left"> 
+        <i class="fa-solid fa-code"></i> 
+        <h1>Odina</h1>
+                <span class="fam-role">Odina&middot; 9 yosh</span>
+                <h1>Maktabga boradi</h1>
+        <a class="loyiha-btn" href="https://portfolioningbirqismi2.netlify.app/" target="_blank" rel="noopener">Saytni ko'rish</a> 
+      </div> 
+      <a class="loyiha-rasm" href="https://portfolioningbirqismi2.netlify.app/" target="_blank" rel="noopener"> 
+        <img class="oila" src="photo_2026-08-27_10-11-35.jpg" alt="" loading="lazy"> 
+      </a> 
+    </div> 
+  </div> 
+</section>
+      <section class="group" id="group">
+        <div class="container">
+          <h2 class="section-title">
+            <span class="section-num">03</span> Mening guruhim
+          </h2>
+          <p class="section-sub">PDP Junior'dagi ajoyib guruhdoshlarim.</p>
+
+          <div class="group-wrapper">
+            <input
+              class="slider-input"
+              id="s1"
+              type="radio"
+              name="slider"
+              checked
+            />
+            <input class="slider-input" id="s2" type="radio" name="slider" />
+            <input class="slider-input" id="s3" type="radio" name="slider" />
+            <input class="slider-input" id="s4" type="radio" name="slider" />
+            <input class="slider-input" id="s5" type="radio" name="slider" />
+            <input class="slider-input" id="s6" type="radio" name="slider" />
+
+            <div class="cards">
+              <label for="s1" id="slide1">
+                <div class="card">
+                  <div class="image-box">
+                    <img
+                      class="card-pic"
+                      src="photo_2026-09-30_15-33-16.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="slide-info">
+                    <h3 class="slide-title">Davlatbek</h3>
+                    <p class="slide-desc">
+                      Guruhimizning a'lochi o'quvchilaridan biri
+                    </p>
+                  </div>
+                </div>
+              </label>
+
+              <label for="s2" id="slide2">
+                <div class="card">
+                  <div class="image-box">
+                    <img
+                      class="card-pic"
+                      src="photo_2026-09-30_15-38-27.jpg"
+                      alt="Ali"
+                    />
+                  </div>
+                  <div class="slide-info">
+                    <h3 class="slide-title">Abdulloh3>
+                    <p class="slide-desc">
+                      A'lochi va tezkor o'quvchilaridan biri
+                    </p>
+                  </div>
+                </div>
+              </label>
+
+              <label for="s3" id="slide3">
+                <div class="card">
+                  <div class="image-box">
+                    <img
+                      class="card-pic"
+                      src="photo_2026-09-30_15-41-18.jpg"
+                      alt="shomahmud"
+                    />
+                  </div>
+                  <div class="slide-info">
+                    <h3 class="slide-title">Abduqodir</h3>
+                    <p class="slide-desc">
+                      Guruhimizning eng a'lochi o'quvchisi
+                    </p>
+                  </div>
+                </div>
+              </label>
+
+              <label for="s4" id="slide4">
+                <div class="card">
+                  <div class="image-box">
+                    <img
+                      class="card-pic"
+                      src="IMG_1421.PNG"
+                      alt="kamron"
+                    />
+                  </div>
+                  <div class="slide-info">
+                    <h3 class="slide-title">Abdurahmon</h3>
+                    <p class="slide-desc">
+                      Tezkor va yaxshi o'quvchilaridan biri
+                    </p>
+                  </div>
+                </div>
+              </label>
+
+              <label for="s5" id="slide5">
+                <div class="card">
+                  <div class="image-box">
+                    <img
+                      class="card-pic"
+                      src="IMG_2774.PNG"
+                      alt="quvonch"
+                    />
+                  </div>
+                  <div class="slide-info">
+                    <h3 class="slide-title">Allayar</h3>
+                    <p class="slide-desc">
+                      Guruhimizning tirishqoq o'quvchilaridan biri
+                    </p>
+                  </div>
+                </div>
+              </label>
+
+              <label for="s6" id="slide6">
+                <div class="card">
+                  <div class="image-box">
+                    <img class="card-pic" src="a85b857c-177c-401b-92b9-5b65ea8b2d02.png" alt="Imronbek" />
+                  </div>
+                  <div class="slide-info">
+                    <h3 class="slide-title">Nizomiddin</h3>
+                    <p class="slide-desc">
+                      Aqlli, ammo kech qoladigan o'quvchi
+                    </p>
+                  </div>
+                </div>
+              </label>
+
+              <label for="s6" id="slide6">
+                <div class="card">
+                  <div class="image-box">
+                    <img
+                      class="card-pic"
+                      src="11958964-a186-4f57-bf2b-cdacdadd4218.png"
+                      alt="salohidin"
+                    />
+                  </div>
+                  <div class="slide-info">
+                    <h3 class="slide-title">Jahongir</h3>
+                    <p class="slide-desc">
+                      Aqlli, ammo kech qoladigan o'quvchi
+                    </p>
+                  </div>
+                </div>
+              </label>
+              <label for="s7" id="slide7">
+                <div class="card">
+                  <div class="image-box">
+                    <img
+                      class="card-pic"
+                      src="file_000000009790820aa5f7eea449d26cda.png"
+                      alt="ISIMNG"
+                    />
+                  </div>
+                  <div class="slide-info">
+                    <h3 class="slide-title">Islamjon</h3>
+                    <p class="slide-desc">Bu yerga tavsif yozing</p>
+                  </div>
+                </div>
+              </label>
+               <label for="s7" id="slide7">
+                <div class="card">
+                  <div class="image-box">
+                    <img
+                      class="card-pic"
+                      src="shoxrux photo.png"
+                      alt="ISIMNG"
+                    />
+                  </div>
+                  <div class="slide-info">
+                    <h3 class="slide-title">Shoxrux</h3>
+                    <p class="slide-desc">Bu yerga tavsif yozing</p>
+                  </div>
+                </div>
+              </label>
+
+              <label for="s2" id="slide2">
+                <div class="card">
+                  <div class="image-box">
+                    <img
+                      class="card-pic"
+                      src="photo_2026-09-30_15-38-27.jpg"
+                      alt="Ali"
+                    />
+                  </div>
+                  <div class="slide-info">
+                    <h3 class="slide-title">Abdulloh3>
+                    <p class="slide-desc">
+                      A'lochi va tezkor o'quvchilaridan biri
+                    </p>
+                  </div>
+                </div>
+              </label>
+
+    </div>
+            </div>
+
+            <div class="group-dots">
+              <label for="s1"></label>
+              <label for="s2"></label>
+              <label for="s3"></label>
+              <label for="s4"></label>
+              <label for="s5"></label>
+              <label for="s6"></label>
+              <label for="s7"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2 class="section-title section-title--light">
+            <span class="section-num">04</span> Mening loyihalarim
+          </h2>
+          <p class="section-sub section-sub--light">
+            O'rganish davomida yasagan ishlarim.
+          </p>
+
+          <div class="proj-grid">
+            <a
+              class="proj-card"
+              href="https://prtbek.vercel.app"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="proj-card__img">
+                <img src="Снимок экрана (166).png" alt="Rent Car" />
+              </div>
+              <div class="proj-card__body">
+                <span class="proj-tag">01</span>
+                <h3>Furniro</h3>
+                <p>Avtomobillarni ijaraga olish joyi</p>
+              </div>
+            </a>
+
+            <a
+              class="proj-card"
+              href="https://ovqat-lake.vercel.app"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="proj-card__img">
+                <img src="Снимок экрана (235).png" alt="Gradients" />
+              </div>
+              <div class="proj-card__body">
+                <span class="proj-tag">02</span>
+                <h3>Gradients</h3>
+                <p>Bo'yoqlarga bo'yalgan sahifa</p>
+              </div>
+            </a>
+
+            <a
+              class="proj-card"
+              href="https://karimbek8-ow6c.vercel.app"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="proj-card__img">
+                <img src="Снимок экрана (180).png" alt="Cleaning Home" />
+              </div>
+              <div class="proj-card__body">
+                <span class="proj-tag">03</span>
+                <h3>ro'yhatdan o'tish</h3>
+                <p>ro'yhatdan o'tish</p>
+              </div>
+            </a>
+
+            <a
+              class="proj-card"
+              href="https://dars1-sigma.vercel.app"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="proj-card__img">
+                <img src="photo_2026-08-15_10-46-58.jpg" alt="Transforms" />
+              </div>
+              <div class="proj-card__body">
+                <span class="proj-tag">04</span>
+                <h3>Transforms</h3>
+                <p>Animatsiyalar joylashgan sahifa</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="contact" id="contact">
+        <div class="container">
+          <h2 class="contact__title">
+            Men, <span>bilan</span><br />
+            bog'laning
+          </h2>
+
+          <div class="contact__grid">
+            <div class="contact__links">
+              <a href="#top">Bosh sahifa</a>
+              <a href="#about">Men haqimda</a>
+              <a href="#family">Oilam</a>
+              <a href="#group">Guruhim</a>
+              <a href="#projects">Loyihalarim</a>
+            </div>
+
+            <div class="contact__info">
+              <a class="contact__big" href="tel:+998915003123"
+                >+998 77 727 53 34</a
+              >
+              <a
+                class="contact__big"
+                href="mailto:meliboyevabirbek6@gmail.com"
+              ></a>
+
+              <ul class="social">
+                <li>
+                  <a href="#" aria-label="Facebook">
+                    <svg
+                      viewBox="0 0 320 512"
+                      height="1.1em"
+                      fill="currentColor"
+                      xmlns=""
+                    >
+                      <path
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Twitter">
+                    <svg
+                      height="1.1em"
+                      fill="currentColor"
+                      viewBox="0 0 48 48"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Instagram">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1.1em"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contact__bottom">
+            <span>&copy; 2026 Karimbek. Barcha huquqlar himoyalangan.</span>
+            <span>Tashkent, O'zbekiston</span>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+
+<div class="energy-bg">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+</div>
+
+<div class="content">
+    <!-- BU YERGA O'Z SAYTINGNI QO'YASAN -->
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
