@@ -1238,10 +1238,11 @@ border-radius: 0px;
 }
 
 .oila {
-  width: 250px;
+  width: 600px;
   border-radius: 8px;
  margin-right: 100px;
  margin-top: 20px;
+ height: 600px;
 }
 .oilam_new {
   padding-bottom: 100px;
@@ -1451,4 +1452,8 @@ body {
 
 .Allayar {
   border-radius: 15px;
+}
+
+.tarvuz {
+  padding-top: 20px;
 }
