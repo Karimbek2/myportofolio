@@ -1197,6 +1197,7 @@ border-radius: 0px;
   background-color: rgb(2, 22, 2);
    border: 1px solid rgb(2, 22, 2);
    border-radius: 100px;
+   padding-left: 60px;
 }
 
 .loyiha-list::-webkit-scrollbar {
@@ -1238,11 +1239,11 @@ border-radius: 0px;
 }
 
 .oila {
-  width: 600px;
+  width: 400px;
   border-radius: 8px;
  margin-right: 100px;
  margin-top: 20px;
- height: 600px;
+ height: 400px;
 }
 .oilam_new {
   padding-bottom: 100px;
